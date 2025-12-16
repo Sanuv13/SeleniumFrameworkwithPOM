@@ -1,4 +1,4 @@
-package org.example.Base;
+package Baseclass;
 import org.example.Utilities.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,7 +15,7 @@ public class CommonToAllPages {
 
     }
     public void clickElement(By by){
-        getDriver().findElement(by).getText();
+        getDriver().findElement(by).click();
     }
 
     public void clickElement(WebElement by){
