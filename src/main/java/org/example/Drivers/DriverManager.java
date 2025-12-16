@@ -31,6 +31,10 @@ public class DriverManager
                 ChromeOptions chromeoptions=new ChromeOptions();
                 chromeoptions.addArguments("--start-maximize");
                 chromeoptions.addArguments("--headless=new");
+                chromeoptions.addArguments("--disable-gpu");
+                chromeoptions.addArguments("--no-sandbox");
+                chromeoptions.addArguments("--disable-dev-shm-usage");
+                chromeoptions.addArguments("--window-size=1920,1080");
                 driver=new ChromeDriver(chromeoptions);
                 break;
 
@@ -38,6 +42,10 @@ public class DriverManager
                 EdgeOptions edgeoptions=new EdgeOptions();
                 edgeoptions.addArguments("--start-maximize");
                 edgeoptions.addArguments("--headless=new");
+                edgeoptions.addArguments("--disable-gpu");
+                edgeoptions.addArguments("--no-sandbox");
+                edgeoptions.addArguments("--disable-dev-shm-usage");
+                edgeoptions.addArguments("--window-size=1920,1080");
                 driver=new EdgeDriver(edgeoptions);
                 break;
             default:
