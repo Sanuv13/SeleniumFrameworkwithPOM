@@ -30,12 +30,14 @@ public class DriverManager
 
                 ChromeOptions chromeoptions=new ChromeOptions();
                 chromeoptions.addArguments("--start-maximize");
+                chromeoptions.addArguments("--headless=new");
                 driver=new ChromeDriver(chromeoptions);
                 break;
 
             case "edge":
                 EdgeOptions edgeoptions=new EdgeOptions();
                 edgeoptions.addArguments("--start-maximize");
+                edgeoptions.addArguments("--headless=new");
                 driver=new EdgeDriver(edgeoptions);
                 break;
             default:
