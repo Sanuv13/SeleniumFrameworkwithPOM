@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Sanuk/IdeaProjects/SeleniumFrameworkwithPOM">
+    <classes>
+        <class name="TestPages.POM.LoginTest">
+            <methods>
+                <include name="Negative_Test_Invalid_Login"/>
+                <include name="Positive_Valid_Login"/>
+                <include name="getoptiondata"/>
+                <include name="getDropDownData"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
