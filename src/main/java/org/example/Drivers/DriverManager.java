@@ -29,7 +29,7 @@ public class DriverManager
             case "chrome":
 
                 ChromeOptions chromeoptions=new ChromeOptions();
-                chromeoptions.addArguments("--start-maximize");
+                //chromeoptions.addArguments("--start-maximize");
                 chromeoptions.addArguments("--headless=new");
                 chromeoptions.addArguments("--disable-gpu");
                 chromeoptions.addArguments("--no-sandbox");
@@ -40,7 +40,7 @@ public class DriverManager
 
             case "edge":
                 EdgeOptions edgeoptions=new EdgeOptions();
-                edgeoptions.addArguments("--start-maximize");
+                //edgeoptions.addArguments("--start-maximize");
                 edgeoptions.addArguments("--headless=new");
                 edgeoptions.addArguments("--disable-gpu");
                 edgeoptions.addArguments("--no-sandbox");
