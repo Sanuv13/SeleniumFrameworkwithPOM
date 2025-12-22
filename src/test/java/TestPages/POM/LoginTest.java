@@ -22,7 +22,6 @@ public class LoginTest extends CommonToAllTests {
 
     @Owner("Sanu")
     @Description("Login the openCart with invalid credentials")
-    @Test
 
     public void Negative_Test_Invalid_Login() {
         log.info("Verify error message is showing if user anme and password is wrong");
@@ -35,9 +34,9 @@ public class LoginTest extends CommonToAllTests {
     }
 
 
-    //@Owner("Sanu")
-    //@Description("Login the Opencart application with valid credentials")
-    //@Test
+    @Owner("Sanu")
+    @Description("Login the Opencart application with valid credentials")
+    @Test
 
 
     public void Positive_Valid_Login(){
