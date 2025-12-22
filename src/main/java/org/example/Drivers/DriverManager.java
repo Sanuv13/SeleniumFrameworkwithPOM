@@ -13,9 +13,11 @@ public class DriverManager
     public static WebDriver driver;
 
     public static WebDriver getDriver(){
+
         return driver;
     }
     public static void setDriver(WebDriver driver){
+
         DriverManager.driver=driver;
     }
 
@@ -29,8 +31,8 @@ public class DriverManager
             case "chrome":
 
                 ChromeOptions chromeoptions=new ChromeOptions();
-                //chromeoptions.addArguments("--start-maximize");
-                chromeoptions.addArguments("--headless=new");
+                chromeoptions.addArguments("--start-maximized");
+                //chromeoptions.addArguments("--headless=new");
                 chromeoptions.addArguments("--disable-gpu");
                 chromeoptions.addArguments("--no-sandbox");
                 chromeoptions.addArguments("--disable-dev-shm-usage");
