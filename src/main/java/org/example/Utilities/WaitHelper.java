@@ -14,20 +14,20 @@ public class WaitHelper {
 
 
     public static WebElement waitForElementVisible(By by){
-        WebDriverWait wait=new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        WebDriverWait wait=new WebDriverWait(getDriver(), Duration.ofSeconds(30));
         return  wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
     public static WebElement waitForElementVisible(WebElement element){
-        WebDriverWait wait=new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        WebDriverWait wait=new WebDriverWait(getDriver(), Duration.ofSeconds(30));
         return  wait.until(ExpectedConditions.visibilityOf(element));
     }
     public static WebElement waitForElementClickable(By by){
-        WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+        WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
        return  wait.until(ExpectedConditions.elementToBeClickable(by));
     }
     public static WebElement waitForElementClickable(WebElement element){
-        WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+        WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
     //public static WebElement waitforTextLocated(WebElement element2){
@@ -35,7 +35,7 @@ public class WaitHelper {
        // return wait.until(ExpectedConditions.visibilityOfElementLocated(element2));
    // }
     public static WebElement waitforTextLocated(By by){
-        WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+        WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
     }
