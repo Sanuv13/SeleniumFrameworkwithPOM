@@ -43,7 +43,7 @@ public class DriverManager
             case "edge":
                 EdgeOptions edgeoptions=new EdgeOptions();
                 //edgeoptions.addArguments("--start-maximize");
-                edgeoptions.addArguments("--headless=new");
+                //edgeoptions.addArguments("--headless=new");
                 edgeoptions.addArguments("--disable-gpu");
                 edgeoptions.addArguments("--no-sandbox");
                 edgeoptions.addArguments("--disable-dev-shm-usage");
