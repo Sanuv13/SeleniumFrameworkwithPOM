@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import  org.example.Utilities.WaitHelper;
 
+import static org.example.Drivers.DriverManager.driver;
 import static org.example.Drivers.DriverManager.getDriver;
 import static org.example.Utilities.WaitHelper.waitForElementClickable;
 import static org.example.Utilities.WaitHelper.waitForElementVisible;
@@ -27,12 +28,20 @@ public class CommonToAllPages {
     public void enterInput(WebElement by,String key){
         by.sendKeys(key);
     }
+
     public String getData(By by){
         return getDriver().findElement(by).getText();
 
     }
     public String getData(WebElement by){
         return by.getText();
+    }
+    public void radiobuttonseect(By by){
+        WebElement radio= driver.findElement(by);
+        if(!radio.isSelected()){
+            radio.click();
+        }
+
     }
     //Email field or password field
     //Sometimes the field already contains old value (browser autofill).

@@ -22,7 +22,7 @@ public class LoginTest extends CommonToAllTests {
 
     @Owner("Sanu")
     @Description("Login the openCart with invalid credentials")
-
+@Test
     public void Negative_Test_Invalid_Login() {
         log.info("Verify error message is showing if user anme and password is wrong");
         LoginPage loginpage = new LoginPage(DriverManager.getDriver());
@@ -36,7 +36,7 @@ public class LoginTest extends CommonToAllTests {
 
     @Owner("Sanu")
     @Description("Login the Opencart application with valid credentials")
-    @Test
+@Test
 
 
     public void Positive_Valid_Login(){
@@ -63,7 +63,7 @@ public class LoginTest extends CommonToAllTests {
     }
     @Owner("Sanu")
     @Description("Check the list of options")
-    @Test
+@Test
     public void getoptiondata(){
         LoginPage loginPage =new LoginPage(DriverManager.getDriver());
         List<String> items=loginPage.getManuOption();
@@ -74,8 +74,8 @@ public class LoginTest extends CommonToAllTests {
 
     @Owner("Sanu")
     @Description("Retrive the Dropdown list")
-    @Test
 
+@Test
     public void getDropDownData(){
         LoginPage loginpage=new LoginPage(DriverManager.getDriver());
         List<String> dataiteams=loginpage.dropDownOptions();
