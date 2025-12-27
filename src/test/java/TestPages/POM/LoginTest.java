@@ -22,7 +22,7 @@ public class LoginTest extends CommonToAllTests {
 
     @Owner("Sanu")
     @Description("Login the openCart with invalid credentials")
-@Test
+   @Test
     public void Negative_Test_Invalid_Login() {
         log.info("Verify error message is showing if user anme and password is wrong");
         LoginPage loginpage = new LoginPage(DriverManager.getDriver());

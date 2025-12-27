@@ -3,7 +3,9 @@
 <suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Sanuk/IdeaProjects/SeleniumFrameworkwithPOM">
     <classes>
         <class name="TestPages.POM.LoginTest">
-        <methods><include name="Positive_Valid_Login"/>
+        <methods>
+            <include name="Negative_Test_Invalid_Login"/>
+            <include name="Positive_Valid_Login"/>
             <include name="getoptiondata"/>
             <include name="getDropDownData"/>
 </methods>
